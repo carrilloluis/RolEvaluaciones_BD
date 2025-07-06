@@ -1,0 +1,21 @@
+@startuml re1
+	skin rose
+	hide circle
+	hide empty members
+	skinparam shadowing false
+
+	entity Asignatura {
+		*id : GUID
+		denominación : VARCHAR
+	}
+	entity RolEvaluaciones {
+		*id : GUID
+		grado : INTEGER
+		nivel : INTEGER
+		bimestre : INTEGER
+		día : INTEGER
+		año : CHAR
+		id_asignatura : CHAR
+	}
+	RolEvaluaciones ||-d-|{ Asignatura
+@enduml
