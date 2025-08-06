@@ -8,6 +8,7 @@
 		*id : GUID
 		denominación : VARCHAR
 	}
+
 	entity RolEvaluaciones {
 		*id : GUID
 		grado : INTEGER
@@ -15,7 +16,8 @@
 		bimestre : INTEGER
 		día : INTEGER
 		año : CHAR
-		id_asignatura : CHAR
+		id_asignatura : UUID
 	}
+
 	RolEvaluaciones ||-d-|{ Asignatura
 @enduml
